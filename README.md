@@ -213,6 +213,13 @@
    <img src="images/d2_floorplan_magic.JPG">
    <img src="images/d2_floorplan_magic_expand.JPG">
  
+ You can open the generated DEF file as:
+ 
+ ```
+ cd designs/picorv32a/<name-for-current-run>/results/floorplan
+ magic -T ../../../../../../../pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
+ ```
+ 
  ## Placement
  ### Placement and Optimization
    The next step after floorplanning is placement. Placement determines location of each of the components on the die. Placement does not just place the standard cells available in the synthesized netlist. It also optimizes the design, thereby removing any timing violations created due to the relative placement on die.
