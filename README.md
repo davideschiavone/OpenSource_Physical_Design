@@ -167,6 +167,11 @@
    
    During the design preparation the technology LEF and cell LEF files are merged together to obtain a `merged.lef` file. The LEF file contains information like the layer information, set of design rules, information about each standard cell which is required for place and route. 
     
+   If you want to see the OpenLane configuration files for the synthesis2gds flow, go to 
+   opnelane/configurations
+   where you find the TCL scripts
+
+
  ### Design Synthesis and Results
    The first step in OpenLANE flow is RTL Synthesis of the design loaded. This is done using the following command.
    
@@ -188,7 +193,7 @@
    Pin placement is a important part of floorplanning as the timing delays and number of buffers required is dependent on the position of the pin. There are multiple pin placement option available such as equidistant placement, high-density placement.
  
  ### Floorplan using OpenLANE
-   Floorplanning in OpenLANE is done using the following command. 
+    Floorplanning in OpenLANE is done using the following command. 
     
     run_floorplan
    
