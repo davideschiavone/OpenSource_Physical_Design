@@ -167,9 +167,11 @@
    
    During the design preparation the technology LEF and cell LEF files are merged together to obtain a `merged.lef` file. The LEF file contains information like the layer information, set of design rules, information about each standard cell which is required for place and route. 
     
-   If you want to see the OpenLane configuration files for the synthesis2gds flow, go to 
-   opnelane/configurations
-   where you find the TCL scripts
+   If you want to see the OpenLane configuration files for the synthesis2gds flow, go to `openlane/configurations`
+   where you find the TCL scripts that set the env variables to drive OpenLane.
+   Such variables (or a subset of those) are also set in the design folder (e.g.`designs/picorv32a/config.tcl`.
+   Those variables overwrite the one in configurations. In addition, in the design folder you can even find the technology config file 
+   (e.g. `designs/picorv32a/sky130A_sky130_fd_sc_hd_config.tcl`) which overwrite the config file of the design and the one in configurations.
 
 
  ### Design Synthesis and Results
