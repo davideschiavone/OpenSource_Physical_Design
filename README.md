@@ -219,6 +219,8 @@
  cd designs/picorv32a/<name-for-current-run>/results/floorplan
  magic -T ../../../../../../../pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def
  ```
+ Once you see the layout, press "s" to select the design, and "v" to center it.
+ 
  
  ## Placement
  ### Placement and Optimization
